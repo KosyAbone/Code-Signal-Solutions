@@ -31,14 +31,9 @@ function solution(upSpeed, downSpeed, desiredHeight) {
     while(true){
         day++;
         currentHeight += upSpeed;
-        console.log(`Height after upspeed is ${currentHeight}`)
         if(currentHeight >= desiredHeight) 
             break
         currentHeight -= downSpeed;
-        console.log(`the current height is ${currentHeight}`)
-        console.log(`day ${day}`)
-        if(currentHeight >= desiredHeight) 
-            break
     }
     return day
 }
