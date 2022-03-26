@@ -24,3 +24,8 @@ function solution(n) {
     }
     return largest
 }
+
+// function solution(n) {
+//     s = n.toString()
+//     return Math.max(...[...Array(s.length).keys()].map(i=>Number(s.slice(0,i)+s.slice(i+1))))
+// }
